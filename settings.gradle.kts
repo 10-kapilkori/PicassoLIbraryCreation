@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PicassoLIbraryCreation"
 include(":app")
- 
+include(":GenerateGlideImage")
