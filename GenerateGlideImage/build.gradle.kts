@@ -51,7 +51,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.10-kapilkori"
             artifactId = "GenerateImage"
-            version = "1.0.7"
+            version = "1.0.12"
 
             afterEvaluate {
                 from(components["release"])

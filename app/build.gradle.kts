@@ -1,7 +1,7 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
-//    id("maven-publish")
+    id("maven-publish")
 }
 
 android {
@@ -9,10 +9,10 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.task.picassolibrarycreation"
+//        applicationId = "com.task.picassolibrarycreation"
         minSdk = 24
-        versionCode = 1
-        versionName = "1.0.0"
+//        versionCode = 1
+//        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -49,16 +49,16 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-//publishing {
-//    publications {
-//        register<MavenPublication>("release") {
-//            groupId = "com.github.10-kapilkori"
-//            artifactId = "GenerateImage"
-//            version = "1.0.7"
-//
-//            afterEvaluate {
-//                from(components["release"])
-//            }
-//        }
-//    }
-//}
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.10-kapilkori"
+            artifactId = "GenerateImage"
+            version = "1.0.12"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
