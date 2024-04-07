@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.library")
+    id("com.android.application")
     id("org.jetbrains.kotlin.android")
 //    id("maven-publish")
 }
@@ -9,8 +9,11 @@ android {
     compileSdk = 34
 
     defaultConfig {
+        applicationId = "com.task.picassocreationlibrary"
         minSdk = 24
         targetSdk = 34
+        versionCode = 1
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
