@@ -17,7 +17,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -51,7 +51,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.10-kapilkori"
             artifactId = "GenerateImage"
-            version = "1.0.4"
+            version = "1.0.7"
 
             afterEvaluate {
                 from(components["release"])
