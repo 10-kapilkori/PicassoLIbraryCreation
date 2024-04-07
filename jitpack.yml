@@ -3,5 +3,5 @@ jdk:
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 subprojects:
-  GeneratedImageLibrary:
-    projectDir: GeneratedImageLibrary
+  include:
+    - GeneratedImageLibrary
